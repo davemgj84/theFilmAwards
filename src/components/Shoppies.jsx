@@ -8,11 +8,10 @@ const Shoppies = () => {
   return (
     <>
       <section className="shoppies">
-        <div>
-          <h1>The Shoppies</h1>
-        </div>
+        <h1>The Shoppies</h1>
+
         <Search />
-        <div>
+        <div className="results-noms">
           <Results />
           <Nominations />
         </div>
