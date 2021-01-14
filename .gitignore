@@ -12,6 +12,7 @@
 /build
 
 # misc
+.eslintcache
 .env
 .DS_Store
 .env.local

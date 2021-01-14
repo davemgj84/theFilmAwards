@@ -1,0 +1,33 @@
+.search {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 120px;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  border-radius: 10px;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+  div {
+    width: 90%;
+    justify-self: center;
+    input {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: solid 1px #cccccc;
+      font-size: 1.2rem;
+      appearance: none;
+      background: none;
+      outline: none;
+      background-color: rgba(229, 229, 229, 0.5);
+      box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+      transition: 0.4s ease-in-out;
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}

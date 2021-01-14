@@ -5,8 +5,10 @@ const Search = () => {
   return (
     <>
       <div className="search">
-        <h2>Movie Title</h2>
-        <input type="text" className="search-bar" placeholder="Search" />
+        <div>
+          <h2>Movie Title</h2>
+          <input type="text" className="search-bar" placeholder="Search" />
+        </div>
       </div>
     </>
   );
