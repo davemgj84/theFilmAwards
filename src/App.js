@@ -1,7 +1,12 @@
 import React from "react";
+import Shoppies from "../src/components/Shoppies";
 
-function App() {
-  return <div className="App"></div>;
-}
+const App = () => {
+  return (
+    <div className="App">
+      <Shoppies />
+    </div>
+  );
+};
 
 export default App;
