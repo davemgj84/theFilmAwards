@@ -7,7 +7,11 @@ const Search = () => {
       <div className="search">
         <div>
           <h2>Movie Title</h2>
-          <input type="text" className="search-bar" placeholder="Search" />
+          <input
+            type="text"
+            className="search-bar"
+            placeholder="Search for a movie title..."
+          />
         </div>
       </div>
     </>

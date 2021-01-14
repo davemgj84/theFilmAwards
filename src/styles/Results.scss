@@ -1,13 +1,15 @@
 .results-box {
   display: flex;
   justify-content: center;
-  width: 45%;
+  width: 50%;
+  height: 300px;
   background-color: #ffffff;
   border: solid 1px #cccccc;
   border-radius: 10px;
   box-shadow: 0 2px rgba(0, 0, 0, 0.1);
   margin-top: 1rem;
   font-size: 16px;
+  margin-right: 1rem;
   .container {
     width: 100%;
     h2 {
@@ -18,7 +20,7 @@
       display: flex;
       flex-direction: column;
       ul {
-        margin: 1rem 0 0 0;
+        margin: 1rem 0 0 1rem;
         li {
           margin-bottom: 1rem;
           button {
