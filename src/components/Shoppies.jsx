@@ -12,8 +12,10 @@ const Shoppies = () => {
           <h1>The Shoppies</h1>
         </div>
         <Search />
-        <Results />
-        <Nominations />
+        <div>
+          <Results />
+          <Nominations />
+        </div>
       </section>
     </>
   );
