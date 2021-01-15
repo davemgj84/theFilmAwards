@@ -4,7 +4,7 @@ const ResultsItem = (props) => {
   return (
     <>
       <li>
-        {props.title} ({props.year})<button>Nominate</button>
+        {props.title} ( {props.year} )<button>Nominate</button>
       </li>
     </>
   );

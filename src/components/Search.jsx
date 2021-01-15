@@ -22,7 +22,9 @@ const Search = (props) => {
     <>
       <div className="search">
         <div>
-          <h2>MOVIE TITLE</h2>
+          <h2>
+            <i class="fas fa-search"></i> Film Title
+          </h2>
           <form>
             <input
               type="text"

@@ -15,10 +15,13 @@ const Results = (props) => {
     <>
       <div className="results-box">
         <div className="container">
-          <h2>SEARCH RESULTS</h2>
+          <h2>
+            <i class="fas fa-search"></i> Search Results
+          </h2>
           <div className="results">
             <ul>{resultList}</ul>
           </div>
+          <p>* Only the Top 5 Search Results are Shown</p>
         </div>
       </div>
     </>
