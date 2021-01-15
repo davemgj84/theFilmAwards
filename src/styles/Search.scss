@@ -2,30 +2,57 @@
   display: flex;
   padding-left: 1rem;
   padding-right: 1rem;
-  width: 50%;
-  height: 120px;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
+  width: 30%;
+  background-color: #191919;
+  border: solid 1px #fbac40;
   border-radius: 10px;
   box-shadow: 0 2px rgba(0, 0, 0, 0.1);
   div {
     width: 100%;
-    input {
-      width: 100%;
-      padding: 5px;
-      border-radius: 8px;
-      border: solid 1px #cccccc;
-      appearance: none;
-      background: none;
-      outline: none;
-      background-color: rgba(229, 229, 229, 0.5);
-      box-shadow: 0 2px rgba(0, 0, 0, 0.2);
-      transition: 0.4s ease-in-out;
-      &:focus {
+    h2 {
+      font-family: "El Messiri", sans-serif;
+      font-size: 28px;
+      color: #fbac40;
+      margin: 1rem 0 0.5rem 0;
+    }
+    form {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      input {
+        width: 80%;
+        padding: 5px;
+        border-radius: 8px;
+        border: solid 1px #cccccc;
+        appearance: none;
+        background: none;
+        outline: none;
         background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 2px #000000;
+        transition: 0.4s ease-in-out;
+        &:focus {
+          background-color: rgba(255, 255, 255, 1);
+        }
+        &:hover {
+          background-color: rgba(255, 255, 255, 1);
+        }
       }
-      &:hover {
+      button {
+        font-family: "El Messiri", sans-serif;
+        margin-left: 1rem;
+        padding: 2px 8px 2px 8px;
+        border-radius: 8px;
+        border: solid 1px #cccccc;
+        appearance: none;
+        background: none;
+        outline: none;
         background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 2px #000000;
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(255, 255, 255, 1);
+        }
       }
     }
   }

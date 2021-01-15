@@ -10,5 +10,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #f4f6f8;
+  background-color: #000000;
+  font-family: "El Messiri", sans-serif;
 }

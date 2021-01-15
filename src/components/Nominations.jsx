@@ -6,7 +6,7 @@ const Nominations = () => {
     <>
       <div className="nomination-box">
         <div className="nom-container">
-          <h2>Nominations</h2>
+          <h2>NOMINATIONS</h2>
           <div className="nominations">
             <ul>
               <li>

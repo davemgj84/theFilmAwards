@@ -2,9 +2,8 @@
   display: flex;
   justify-content: center;
   width: 50%;
-  height: 300px;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
+  background-color: #191919;
+  border: solid 1px #fbac40;
   border-radius: 10px;
   box-shadow: 0 2px rgba(0, 0, 0, 0.1);
   margin-top: 1rem;
@@ -12,20 +11,43 @@
   .nom-container {
     width: 100%;
     h2 {
-      font-size: 20px;
-      margin-left: 1rem;
+      font-family: "El Messiri", sans-serif;
+      font-size: 24px;
+      color: #fbac40;
+      margin: 1rem 0 0 1rem;
     }
     .nominations {
       display: flex;
       flex-direction: column;
+      width: 100%;
       ul {
-        margin: 1rem 0 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+        padding-left: 0;
         li {
+          display: flex;
+          justify-content: space-between;
+          width: 95%;
           margin-bottom: 1rem;
+          padding: 0.8rem;
+          list-style-type: disc;
+          background-color: rgba(255, 255, 255, 0.8);
+          border-radius: 15px;
+          border: solid 2px #fbac40;
+          box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+          transition: 0.4s ease-in-out;
+          &:hover {
+            background-color: rgba(255, 255, 255, 1);
+          }
           button {
+            font-family: "El Messiri", sans-serif;
             margin-left: 1rem;
+            margin-right: 2rem;
             padding: 3px 5px 3px 5px;
-            border-radius: 5px;
+            border-radius: 8px;
             border: solid 1px #cccccc;
             appearance: none;
             background: none;

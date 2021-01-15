@@ -1,28 +1,24 @@
 import React from "react";
+import ResultsItem from "./ResultsItem";
 import "../styles/Results.scss";
 
-const Results = () => {
+const Results = (props) => {
+  const searchResults = props.results.Search || [];
+
+  // create components for first 5 search results
+  const maxResults = 5;
+  const resultList = searchResults.slice(0, maxResults).map((movie, index) => {
+    return <ResultsItem key={index} title={movie.Title} year={movie.Year} />;
+  });
+
   return (
     <>
       <div className="results-box">
         <div className="container">
-          <h2>
-            Results for "<span>The Big Lebowski</span>"
-          </h2>
+          <h2>SEARCH RESULTS</h2>
           <div className="results">
-            <ul>
-              <li>
-                The Big Lebowski (1998) <button>Nominate</button>
-              </li>
-              <li>
-                The Big Lebowski (1998) <button>Nominate</button>
-              </li>
-              <li>
-                The Big Lebowski (1998) <button>Nominate</button>
-              </li>
-            </ul>
+            <ul>{resultList}</ul>
           </div>
-          <p>* Only the top 3 search results will be displayed *</p>
         </div>
       </div>
     </>
