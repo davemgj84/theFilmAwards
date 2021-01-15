@@ -13,7 +13,7 @@ const Nominations = () => {
       <div className="nomination-box">
         <div className="nom-container">
           <h2>
-            <i class="fas fa-trophy"></i> Nominations
+            <i className="fas fa-trophy"></i> Nominations
           </h2>
           <div className="nominations">
             <ul>

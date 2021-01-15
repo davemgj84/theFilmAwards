@@ -12,7 +12,8 @@ const Shoppies = () => {
     <>
       <section className="shoppies">
         <h1>
-          <i class="fas fa-film"></i> THE SHOPPIES <i class="fas fa-film"></i>
+          <i className="fas fa-film"></i> THE SHOPPIES{" "}
+          <i className="fas fa-film"></i>
         </h1>
         <Search setResults={setResults} query={query} setQuery={setQuery} />
         <div className="results-noms">

@@ -9,6 +9,16 @@
   height: 90%;
   width: 95%;
   z-index: -1;
+  .top-accent {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: -16px;
+    border: solid 2px#d4af37;
+    border-radius: 0 0 30px 30px;
+    height: 30px;
+    width: 30%;
+  }
   .box-top-left {
     position: absolute;
     top: -25px;
@@ -93,16 +103,7 @@
     height: 400px;
     width: 30px;
   }
-  .top-accent {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    top: -16px;
-    border: solid 2px#d4af37;
-    border-radius: 0 0 30px 30px;
-    height: 30px;
-    width: 30%;
-  }
+
   .bottom-accent {
     position: absolute;
     right: 50%;

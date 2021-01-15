@@ -16,7 +16,7 @@ const Results = (props) => {
       <div className="results-box">
         <div className="container">
           <h2>
-            <i class="fas fa-search"></i> Search Results
+            <i className="fas fa-search"></i> Search Results
           </h2>
           <div className="results">
             <ul>{resultList}</ul>

@@ -23,18 +23,19 @@ const Search = (props) => {
       <div className="search">
         <div>
           <h2>
-            <i class="fas fa-search"></i> Film Title
+            <i className="fas fa-search"></i> Film Title
           </h2>
           <form>
             <input
               type="text"
-              className="search-bar"
               placeholder="Search..."
               value={props.query}
               onChange={(evt) => props.setQuery(evt.target.value)}
               setSearch={props.query}
             />
-            <button onClick={(evt) => handleRequest(evt)}>Submit</button>
+            <button onClick={(evt) => handleRequest(evt)}>
+              <i className="fas fa-search"></i>
+            </button>
           </form>
         </div>
       </div>

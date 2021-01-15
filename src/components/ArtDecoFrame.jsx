@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/art-deco-frame.scss";
+import "../styles/ArtDecoFrame.scss";
 
 const ArtDecoFrame = () => {
   return (
