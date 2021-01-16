@@ -24,7 +24,7 @@ const Shoppies = () => {
             nominee={nominee}
             setNominee={setNominee}
           />
-          <Nominations nominee={nominee} />
+          <Nominations nominee={nominee} setNominee={setNominee} />
         </div>
       </section>
     </>

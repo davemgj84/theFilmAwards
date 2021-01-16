@@ -3,6 +3,13 @@ import NominateItem from "./NominateItem";
 import "../styles/Nominations.scss";
 
 const Nominations = (props) => {
+  const removeNominee = (evt) => {
+    const selection = evt.target.parentElement.attributes.index.value;
+    const arrayCopy = [...props.nominee];
+    arrayCopy.splice(selection, 1);
+    props.setNominee(arrayCopy);
+  };
+
   const nomineeList = props.nominee.map((movie, index) => {
     return (
       <NominateItem
@@ -10,6 +17,7 @@ const Nominations = (props) => {
         title={movie.title}
         year={movie.year}
         index={index}
+        removeNominee={removeNominee}
       />
     );
   });

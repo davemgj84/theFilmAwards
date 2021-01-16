@@ -3,8 +3,9 @@ import React from "react";
 const NominateItem = (props) => {
   return (
     <>
-      <li>
-        {props.title} ( {props.year} ) <button>Remove</button>
+      <li index={props.index}>
+        {props.title} ( {props.year} ){" "}
+        <button onClick={props.removeNominee}>Remove</button>
       </li>
     </>
   );
