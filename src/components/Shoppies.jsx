@@ -7,6 +7,7 @@ import Nominations from "./Nominations";
 const Shoppies = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
+  const [nominee, setNominee] = useState([]);
 
   return (
     <>
@@ -17,8 +18,13 @@ const Shoppies = () => {
         </h1>
         <Search setResults={setResults} query={query} setQuery={setQuery} />
         <div className="results-noms">
-          <Results query={query} results={results} />
-          <Nominations />
+          <Results
+            query={query}
+            results={results}
+            nominee={nominee}
+            setNominee={setNominee}
+          />
+          <Nominations nominee={nominee} />
         </div>
       </section>
     </>

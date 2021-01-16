@@ -2,10 +2,16 @@ import React from "react";
 import NominateItem from "./NominateItem";
 import "../styles/Nominations.scss";
 
-const Nominations = () => {
-  const nominees = [];
-  const nomineeList = nominees.map((movie, index) => {
-    return <NominateItem key={index} title={movie.Title} year={movie.Year} />;
+const Nominations = (props) => {
+  const nomineeList = props.nominee.map((movie, index) => {
+    return (
+      <NominateItem
+        key={index}
+        title={movie.title}
+        year={movie.year}
+        index={index}
+      />
+    );
   });
 
   return (
@@ -16,12 +22,7 @@ const Nominations = () => {
             <i className="fas fa-trophy"></i> Nominations
           </h2>
           <div className="nominations">
-            <ul>
-              {nomineeList}
-              <li>
-                The Big Lebowski ( 1998 ) <button>Remove</button>
-              </li>
-            </ul>
+            <ul>{nomineeList}</ul>
           </div>
         </div>
       </div>

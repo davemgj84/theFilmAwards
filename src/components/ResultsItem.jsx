@@ -3,8 +3,9 @@ import React from "react";
 const ResultsItem = (props) => {
   return (
     <>
-      <li>
-        {props.title} ( {props.year} )<button>Nominate</button>
+      <li index={props.index}>
+        {props.title} ({props.year})
+        <button onClick={props.nominate}>Nominate</button>
       </li>
     </>
   );

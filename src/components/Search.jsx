@@ -31,7 +31,6 @@ const Search = (props) => {
               placeholder="Search..."
               value={props.query}
               onChange={(evt) => props.setQuery(evt.target.value)}
-              setSearch={props.query}
             />
             <button onClick={(evt) => handleRequest(evt)}>
               <i className="fas fa-search"></i>

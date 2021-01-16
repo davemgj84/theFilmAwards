@@ -3,12 +3,26 @@ import ResultsItem from "./ResultsItem";
 import "../styles/Results.scss";
 
 const Results = (props) => {
-  const searchResults = props.results.Search || [];
+  const nominate = (evt) => {
+    const selection = evt.target.parentElement.attributes.index.value;
+    props.setNominee((prev) => [...prev, filmData[selection]]);
+  };
 
   // create components for first 5 search results
+  const searchResults = props.results.Search || [];
   const maxResults = 5;
-  const resultList = searchResults.slice(0, maxResults).map((movie, index) => {
-    return <ResultsItem key={index} title={movie.Title} year={movie.Year} />;
+  const filmData = [];
+  const resultList = searchResults.slice(0, maxResults).map((film, index) => {
+    filmData.push({ title: film.Title, year: film.Year, key: index });
+    return (
+      <ResultsItem
+        key={index}
+        index={index}
+        title={film.Title}
+        year={film.Year}
+        nominate={nominate}
+      />
+    );
   });
 
   return (
