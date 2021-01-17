@@ -6,25 +6,20 @@ const Results = (props) => {
   // nominate function - if 5 or less nominations have been made, nomiate film, if not already nominated
   const nominate = (evt) => {
     const selection = evt.target.parentElement.attributes.index.value;
+    const button = evt.target;
     if (
       props.nominee.length <= 4 &&
-      props.nominee.find((obj) => obj.title === filmData[selection].title) ===
-        undefined
+      props.nominee.find(
+        (obj) => obj.title === props.results[selection].title
+      ) === undefined
     ) {
-      props.setNominee((prev) => [...prev, filmData[selection]]);
+      props.setNominee((prev) => [...prev, props.results[selection]]);
+      button.disabled = true;
     }
   };
 
-  // parse data and grab title and year and create simpler objects
-  const data = props.results.Search || [];
-  const maxResults = 5;
-  const filmData = [];
-  data.slice(0, maxResults).map((film) => {
-    return filmData.push({ title: film.Title, year: film.Year });
-  });
-
   // create components for first 5 search results
-  const resultList = filmData.map((film, index) => {
+  const resultList = props.results.map((film, index) => {
     return (
       <ResultsItem
         key={index}
@@ -32,6 +27,7 @@ const Results = (props) => {
         title={film.title}
         year={film.year}
         nominate={nominate}
+        nominee={props.nominee}
       />
     );
   });

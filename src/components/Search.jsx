@@ -11,7 +11,14 @@ const Search = (props) => {
       )
       .then((response) => response.data)
       .then((result) => {
-        props.setResults(result);
+        const data = result.Search || [];
+        const maxResults = 5;
+        const filmData = [];
+        data.slice(0, maxResults).map((film) => {
+          return filmData.push({ title: film.Title, year: film.Year });
+        });
+        props.setResults([]);
+        props.setResults(filmData);
       })
       .catch((err) => {
         console.log("Error", err);
