@@ -40,6 +40,6 @@ Thank you for your time and consideration.
 
 # Screenshots
 
-![Search]()
-![Nominate]()
-![Thank you!]()
+![Search](https://github.com/davemgj84/shoppies/blob/master/docs/shoppies-search.png?raw=true)
+![Nominate](https://github.com/davemgj84/shoppies/blob/master/docs/shoppies-nominate.png?raw=true)
+![Thank you!](https://github.com/davemgj84/shoppies/blob/master/docs/shoppies-thanks.png?raw=true)
