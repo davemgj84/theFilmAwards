@@ -35,7 +35,7 @@ const Results = (props) => {
 
   return (
     <>
-      <div className="results-box">
+      <section className="results-box">
         <div className="container">
           <h2>
             <i className="fas fa-search"></i> Search Results
@@ -45,7 +45,7 @@ const Results = (props) => {
           </div>
           <p>* Only the Top 5 Search Results are Shown</p>
         </div>
-      </div>
+      </section>
     </>
   );
 };

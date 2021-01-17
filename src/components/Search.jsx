@@ -29,7 +29,6 @@ const Search = (props) => {
       });
   };
 
-  console.log(props.results);
   return (
     <>
       <div className="search">

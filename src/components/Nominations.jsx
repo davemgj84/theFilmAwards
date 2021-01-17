@@ -25,7 +25,7 @@ const Nominations = (props) => {
 
   return (
     <>
-      <div className="nomination-box">
+      <section className="nomination-box">
         <div className="nom-container">
           <h2>
             <i className="fas fa-trophy"></i> Nominations
@@ -34,7 +34,7 @@ const Nominations = (props) => {
             <ul>{nomineeList}</ul>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
