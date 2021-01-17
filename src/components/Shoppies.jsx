@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Shoppies.scss";
+import "../styles/responsive/Shoppies-resp.scss";
 import Search from "./Search";
 import Results from "./Results";
 import Nominations from "./Nominations";

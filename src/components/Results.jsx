@@ -1,6 +1,7 @@
 import React from "react";
 import ResultsItem from "./ResultsItem";
 import "../styles/Results.scss";
+import "../styles/responsive/Results-resp.scss";
 
 const Results = (props) => {
   // nominate function - if 5 or less nominations have been made, nomiate film, if not already nominated

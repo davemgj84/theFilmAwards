@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Banner.scss";
+import "../styles/responsive/Banner-resp.scss";
 
 const Banner = (props) => {
   const closeBanner = () => {

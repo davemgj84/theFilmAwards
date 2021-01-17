@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import "../styles/Search.scss";
+import "../styles/responsive/Search-resp.scss";
 
 const Search = (props) => {
   const handleRequest = (evt) => {

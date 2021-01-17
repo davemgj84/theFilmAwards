@@ -2,12 +2,15 @@
 
 .frame {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   align-self: start;
   border: solid 2px#d4af37;
-  height: 90%;
-  width: 95%;
+  height: 88%;
+  width: 92%;
   z-index: -1;
   .top-accent {
     position: absolute;

@@ -1,6 +1,7 @@
 import React from "react";
 import NominateItem from "./NominateItem";
 import "../styles/Nominations.scss";
+import "../styles/responsive/Nominations-resp.scss";
 
 const Nominations = (props) => {
   const removeNominee = (evt) => {
