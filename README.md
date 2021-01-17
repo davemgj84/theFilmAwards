@@ -8,7 +8,7 @@ This is a front-end app that allows users to search OMDB (The Open Movie Databas
 
 The application is deployed via Netlify and be visited here:
 
-- netlify link\*
+- https://the-shoppies-awards-by-dj.netlify.app/
 
 # Instructions to run assignment locally
 
@@ -30,7 +30,7 @@ Once dependencies have been installed, and you have acquired your own OMDB API k
 
 This repository has also been deployed on NETLIFY here:
 
-- netlify link\*
+- https://the-shoppies-awards-by-dj.netlify.app/
 
 # Feedback on this technical challenge
 
