@@ -41,5 +41,5 @@ Thank you for your time and consideration.
 # Screenshots
 
 ![Search](https://github.com/davemgj84/shoppies/blob/master/docs/shoppies-search.png?raw=true)
-![Nominate](https://github.com/davemgj84/shoppies/blob/master/docs/shoppies-nominate.png?raw=true)
+![Nominate](https://github.com/davemgj84/shoppies/blob/master/docs/shoppies-nom.png?raw=true)
 ![Thank you!](https://github.com/davemgj84/shoppies/blob/master/docs/shoppies-thanks.png?raw=true)
