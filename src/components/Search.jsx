@@ -11,17 +11,20 @@ const Search = (props) => {
       )
       .then((response) => response.data)
       .then((result) => {
-        const data = result.Search || [];
-        const filmData = [];
-        data.map((film) => {
-          return filmData.push({
-            title: film.Title,
-            year: film.Year,
-            image: film.Poster,
-          });
-        });
-        props.setResults([]);
-        props.setResults(filmData);
+        const data = result.Search;
+        if (data) {
+          props.setResults(
+            data.map((film) => {
+              return {
+                title: film.Title,
+                year: film.Year,
+                image: film.Poster,
+              };
+            })
+          );
+        } else {
+          props.setResults([]);
+        }
       })
       .catch((err) => {
         console.log("Error", err);
