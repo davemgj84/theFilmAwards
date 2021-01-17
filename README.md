@@ -22,6 +22,8 @@ Once you have your API key, create a `.env` file to store your key. Look at the 
 
 Once dependencies have been installed, and you have acquired your own OMDB API key (as well as the `.env` file), you can now run `npm start` to start the application locally on `Port 3000`.
 
+**_ It should be noted that this application was developed for laptop screens and larger. I unfortunately have not made it responsive for mobile at this time _**
+
 ## Dependencies include:
 
 - React - ^17.0.1
