@@ -26,6 +26,7 @@ const Results = (props) => {
         index={index}
         title={film.title}
         year={film.year}
+        image={film.image}
         nominate={nominate}
         nominee={props.nominee}
       />

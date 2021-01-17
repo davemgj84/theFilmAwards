@@ -16,7 +16,12 @@ const Shoppies = () => {
           <i className="fas fa-film"></i> THE SHOPPIES{" "}
           <i className="fas fa-film"></i>
         </h1>
-        <Search setResults={setResults} query={query} setQuery={setQuery} />
+        <Search
+          results={results}
+          setResults={setResults}
+          query={query}
+          setQuery={setQuery}
+        />
         <div className="results-noms">
           <Results
             query={query}

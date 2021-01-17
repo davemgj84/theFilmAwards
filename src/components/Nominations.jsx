@@ -10,12 +10,13 @@ const Nominations = (props) => {
     props.setNominee(arrayCopy);
   };
 
-  const nomineeList = props.nominee.map((movie, index) => {
+  const nomineeList = props.nominee.map((film, index) => {
     return (
       <NominateItem
         key={index}
-        title={movie.title}
-        year={movie.year}
+        title={film.title}
+        year={film.year}
+        image={film.image}
         index={index}
         removeNominee={removeNominee}
       />

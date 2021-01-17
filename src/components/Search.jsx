@@ -15,7 +15,11 @@ const Search = (props) => {
         const maxResults = 5;
         const filmData = [];
         data.slice(0, maxResults).map((film) => {
-          return filmData.push({ title: film.Title, year: film.Year });
+          return filmData.push({
+            title: film.Title,
+            year: film.Year,
+            image: film.Poster,
+          });
         });
         props.setResults([]);
         props.setResults(filmData);
@@ -25,6 +29,7 @@ const Search = (props) => {
       });
   };
 
+  console.log(props.results);
   return (
     <>
       <div className="search">
