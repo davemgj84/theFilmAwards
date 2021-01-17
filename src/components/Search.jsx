@@ -7,7 +7,7 @@ const Search = (props) => {
     evt.preventDefault();
     axios
       .get(
-        `http://www.omdbapi.com/?i=tt3896198&apikey=${process.env.REACT_APP_API}&type=movie&s=${props.query}`
+        `https://www.omdbapi.com/?i=tt3896198&apikey=${process.env.REACT_APP_API}&type=movie&s=${props.query}`
       )
       .then((response) => response.data)
       .then((result) => {
