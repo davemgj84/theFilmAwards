@@ -12,10 +12,7 @@ const Banner = (props) => {
     return (
       <>
         <section className="banner-box">
-          <i
-            onClick={() => closeBanner()}
-            className="far fa-times-circle fa-2x"
-          ></i>
+          <i onClick={() => closeBanner()} className="far fa-times-circle"></i>
           <h2>
             <i className="fas fa-glass-cheers"></i> Thank you for your
             Nominations! <i className="fas fa-glass-cheers"></i>

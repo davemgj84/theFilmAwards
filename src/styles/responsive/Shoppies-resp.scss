@@ -5,7 +5,15 @@
       font-size: 40px;
     }
     .results-noms {
-      width: 75%;
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .shoppies {
+    h1 {
+      font-size: 36px;
     }
   }
 }

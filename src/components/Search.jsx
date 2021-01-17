@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 import "../styles/Search.scss";
-import "../styles/responsive/Search-resp.scss";
 
 const Search = (props) => {
   const handleRequest = (evt) => {
@@ -13,9 +12,8 @@ const Search = (props) => {
       .then((response) => response.data)
       .then((result) => {
         const data = result.Search || [];
-        const maxResults = 5;
         const filmData = [];
-        data.slice(0, maxResults).map((film) => {
+        data.map((film) => {
           return filmData.push({
             title: film.Title,
             year: film.Year,
@@ -32,24 +30,17 @@ const Search = (props) => {
 
   return (
     <>
-      <div className="search">
-        <div>
-          <h2>
-            <i className="fas fa-search"></i> Film Title
-          </h2>
-          <form>
-            <input
-              type="text"
-              placeholder="Search..."
-              value={props.query}
-              onChange={(evt) => props.setQuery(evt.target.value)}
-            />
-            <button onClick={(evt) => handleRequest(evt)}>
-              <i className="fas fa-search"></i>
-            </button>
-          </form>
-        </div>
-      </div>
+      <form className="search">
+        <input
+          type="text"
+          placeholder="Search for a Film..."
+          value={props.query}
+          onChange={(evt) => props.setQuery(evt.target.value)}
+        />
+        <button onClick={(evt) => handleRequest(evt)}>
+          <i className="fas fa-search"></i>
+        </button>
+      </form>
     </>
   );
 };

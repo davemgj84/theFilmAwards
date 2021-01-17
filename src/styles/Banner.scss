@@ -20,14 +20,15 @@
   transition: ease-in-out 0.6s;
   animation: fadeIn 0.6s, bounce 2s ease-in-out infinite;
   h2 {
-    font-size: 48px;
+    font-size: 40px;
     letter-spacing: 1px;
     font-weight: normal;
   }
   .fa-times-circle {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    font-size: 1.25rem;
+    top: 1rem;
+    right: 1rem;
     align-items: flex-end;
     opacity: 0.3;
     cursor: pointer;

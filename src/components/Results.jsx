@@ -44,7 +44,6 @@ const Results = (props) => {
           <div className="results">
             <ul>{resultList}</ul>
           </div>
-          <p>* Only the Top 5 Search Results are Shown</p>
         </div>
       </section>
     </>
