@@ -1,13 +1,9 @@
 import React from "react";
+import closeBanner from "../helpers/closeBanner";
 import "../styles/Banner.scss";
 import "../styles/responsive/Banner-resp.scss";
 
 const Banner = (props) => {
-  const closeBanner = () => {
-    const banner = document.querySelector(".banner-box");
-    banner.style.display = "none";
-  };
-
   if (props.nominee.length === 5) {
     return (
       <>
