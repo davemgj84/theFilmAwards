@@ -5,9 +5,9 @@ import "../styles/Nominations.scss";
 const Nominations = (props) => {
   const removeNominee = (evt) => {
     const selection = evt.target.parentElement.attributes.index.value;
-    const arrayCopy = [...props.nominee];
-    arrayCopy.splice(selection, 1);
-    props.setNominee(arrayCopy);
+    props.setNominee((prev) =>
+      prev.filter((film) => film.title !== props.nominee[selection].title)
+    );
   };
 
   const nomineeList = props.nominee.map((film, index) => {
