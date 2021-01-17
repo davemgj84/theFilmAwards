@@ -12,8 +12,30 @@
 
 @media screen and (max-width: 1440px) {
   .shoppies {
+    margin-top: 3.5rem;
     h1 {
       font-size: 36px;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .shoppies {
+    margin-top: 2.5rem;
+    h1 {
+      font-size: 36px;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .shoppies {
+    margin-top: 5rem;
+    h1 {
+      font-size: 36px;
+      margin-bottom: 1rem;
     }
   }
 }

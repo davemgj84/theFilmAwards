@@ -11,6 +11,8 @@
   margin-right: 1rem;
   position: relative;
   overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   transition: ease-in-out 0.4s;
   animation: fadeInSlide 0.6s;
   .container {
@@ -36,6 +38,7 @@
         padding-left: 0;
         li {
           display: flex;
+          align-items: center;
           width: 95%;
           margin-bottom: 1rem;
           padding: 0.75rem;
