@@ -7,15 +7,13 @@ const Results = (props) => {
   // nominate function - if 5 or less nominations have been made, nomiate film, if not already nominated
   const nominate = (evt) => {
     const selection = evt.target.parentElement.attributes.index.value;
-    const button = evt.target;
     if (
       props.nominee.length <= 4 &&
       props.nominee.find(
-        (film) => (film.title && film.year) === (props.results[selection].title && props.results[selection].year)
+        (film) => film.title === props.results[selection].title
       ) === undefined
     ) {
       props.setNominee((prev) => [...prev, props.results[selection]]);
-      button.disabled = true;
     }
   };
 
