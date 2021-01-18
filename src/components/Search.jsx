@@ -11,7 +11,7 @@ const Search = (props) => {
       )
       .then((response) => response.data)
       .then((result) => {
-        const data = result.Search || [];
+        const data = result.Search;
         if (data) {
           props.setResults(
             data.map((film) => {
