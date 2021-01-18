@@ -8,6 +8,8 @@ const Banner = (props) => {
   useEffect(() => {
     if (props.nominee.length === 5) {
       setShow(true);
+    } else {
+      setShow(false);
     }
   }, [props.nominee]);
 
