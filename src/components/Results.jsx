@@ -11,7 +11,7 @@ const Results = (props) => {
     if (
       props.nominee.length <= 4 &&
       props.nominee.find(
-        (obj) => obj.title === props.results[selection].title
+        (film) => (film.title && film.year) === (props.results[selection].title && props.results[selection].year)
       ) === undefined
     ) {
       props.setNominee((prev) => [...prev, props.results[selection]]);

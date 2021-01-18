@@ -6,11 +6,7 @@ const Banner = (props) => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    if (props.nominee.length === 5) {
-      setShow(true);
-    } else {
-      setShow(false);
-    }
+    setShow(props.nominee.length === 5);
   }, [props.nominee]);
 
   if (show) {

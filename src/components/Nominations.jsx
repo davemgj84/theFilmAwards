@@ -7,7 +7,7 @@ const Nominations = (props) => {
   const removeNominee = (evt) => {
     const selection = evt.target.parentElement.attributes.index.value;
     props.setNominee((prev) =>
-      prev.filter((film) => film.title !== props.nominee[selection].title)
+      prev.filter((film) => (film.title && film.year) !== (props.nominee[selection].title && props.nominee[selection].year))
     );
   };
 
