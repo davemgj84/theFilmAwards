@@ -11,7 +11,7 @@ const Search = (props) => {
       )
       .then((response) => response.data)
       .then((result) => {
-        const data = result.Search;
+        const data = result.Search || [];
         if (data) {
           props.setResults(
             data.map((film) => {
@@ -32,7 +32,6 @@ const Search = (props) => {
   };
 
   return (
-    <>
       <form className="search">
         <input
           type="text"
@@ -44,7 +43,6 @@ const Search = (props) => {
           <i className="fas fa-search"></i>
         </button>
       </form>
-    </>
   );
 };
 

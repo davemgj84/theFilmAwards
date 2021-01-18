@@ -25,7 +25,7 @@ const Nominations = (props) => {
   });
 
   return (
-    <>
+
       <section className="nomination-box">
         <div className="nom-container">
           <h2>
@@ -36,7 +36,6 @@ const Nominations = (props) => {
           </div>
         </div>
       </section>
-    </>
   );
 };
 

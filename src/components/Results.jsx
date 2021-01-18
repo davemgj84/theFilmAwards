@@ -35,7 +35,6 @@ const Results = (props) => {
   });
 
   return (
-    <>
       <section className="results-box">
         <div className="container">
           <h2>
@@ -46,7 +45,6 @@ const Results = (props) => {
           </div>
         </div>
       </section>
-    </>
   );
 };
 

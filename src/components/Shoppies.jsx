@@ -12,7 +12,6 @@ const Shoppies = () => {
   const [nominee, setNominee] = useState([]);
 
   return (
-    <>
       <section className="shoppies">
         <h1>
           <i className="fas fa-film"></i> THE SHOPPIES{" "}
@@ -30,7 +29,6 @@ const Shoppies = () => {
           <Banner nominee={nominee} />
         </div>
       </section>
-    </>
   );
 };
 

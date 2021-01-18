@@ -13,15 +13,13 @@ const Banner = (props) => {
 
   if (show) {
     return (
-      <>
-        <section className="banner-box">
-          <i onClick={() => setShow(false)} className="far fa-times-circle"></i>
-          <h2>
-            <i className="fas fa-glass-cheers"></i> Thank you for your
-            Nominations! <i className="fas fa-glass-cheers"></i>
-          </h2>
-        </section>
-      </>
+      <section className="banner-box">
+        <i onClick={() => setShow(false)} className="far fa-times-circle"></i>
+        <h2>
+          <i className="fas fa-glass-cheers"></i> Thank you for your
+          Nominations! <i className="fas fa-glass-cheers"></i>
+        </h2>
+      </section>
     );
   } else {
     return <> </>;
