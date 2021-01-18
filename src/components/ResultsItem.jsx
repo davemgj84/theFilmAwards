@@ -4,7 +4,7 @@ import "../styles/ResultsItem.scss";
 import "../styles/responsive/ResultsItem-resp.scss";
 
 const ResultsItem = (props) => {
-  const nominated = props.nominee.find((film) => film.title === props.title) !== undefined;
+  const nominated = props.nominee.find((film) => film.id === props.id) !== undefined;
   return (
       <li>
         <FilmPoster image={props.image} />

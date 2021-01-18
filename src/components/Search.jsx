@@ -19,6 +19,7 @@ const Search = (props) => {
                 title: film.Title,
                 year: film.Year,
                 image: film.Poster,
+                id: film.imdbID
               };
             })
           );

@@ -7,7 +7,7 @@ const Nominations = (props) => {
   const removeNominee = (evt) => {
     const selection = evt.target.parentElement.attributes.index.value;
     props.setNominee((prev) =>
-      prev.filter((film) => film.title !== props.nominee[selection].title)
+      prev.filter((film) => film.id !== props.nominee[selection].id)
     );
   };
 
@@ -17,6 +17,7 @@ const Nominations = (props) => {
         key={index}
         title={film.title}
         year={film.year}
+        id={film.id}
         image={film.image}
         index={index}
         removeNominee={removeNominee}
