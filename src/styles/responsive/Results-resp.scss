@@ -1,38 +1,12 @@
 @media screen and (max-width: 1600px) {
   .results-box {
     height: 400px;
-    .container {
-      .results {
-        ul {
-          li {
-            margin-bottom: 0.75rem;
-            padding: 0.5rem;
-            border: solid 1px #d4af37;
-            font-size: 16px;
-            button {
-              margin-right: 1.5rem;
-            }
-          }
-        }
-      }
-    }
   }
 }
 
 @media screen and (max-width: 1440px) {
   .results-box {
     height: 320px;
-    .container {
-      .results {
-        ul {
-          li {
-            button {
-              margin-right: 1rem;
-            }
-          }
-        }
-      }
-    }
   }
 }
 
@@ -43,18 +17,6 @@
       h2 {
         font-size: 20px;
         margin: 0.5rem 0 0 0.5rem;
-      }
-      .results {
-        ul {
-          li {
-            margin-bottom: 0.5rem;
-            padding: 0.3rem;
-            button {
-              font-size: 14px;
-              height: 1.5rem;
-            }
-          }
-        }
       }
     }
   }

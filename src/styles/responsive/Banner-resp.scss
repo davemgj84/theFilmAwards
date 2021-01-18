@@ -13,3 +13,19 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .banner-box {
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .banner-box {
+    h2 {
+      font-size: 20px;
+    }
+  }
+}

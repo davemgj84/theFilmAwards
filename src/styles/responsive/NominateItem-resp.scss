@@ -1,0 +1,33 @@
+@media screen and (max-width: 1600px) {
+  li {
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    border: solid 1px #d4af37;
+    font-size: 16px;
+    button {
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  li {
+    button {
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  li {
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    border: solid 1px #d4af37;
+    font-size: 14px;
+    button {
+      font-size: 14px;
+      height: 1.5rem;
+      margin-right: 1rem;
+    }
+  }
+}

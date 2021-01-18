@@ -1,5 +1,7 @@
 import React from "react";
 import FilmPoster from "./FilmPoster";
+import "../styles/ResultsItem.scss";
+import "../styles/responsive/ResultsItem-resp.scss";
 
 const ResultsItem = (props) => {
   const nominated = props.nominee.find((obj) => obj.title === props.title) !== undefined;
