@@ -20,7 +20,7 @@ const Banner = (props) => {
       </section>
     );
   } else {
-    return <> </>;
+    return <></>
   }
 };
 
