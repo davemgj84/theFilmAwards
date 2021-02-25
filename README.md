@@ -2,6 +2,8 @@
 
 This is a front-end app that allows users to search OMDB (The Open Movie Database), for their favorite films. They can nominate up to 5 films for a "Shoppie" award. Once they have nominated 5 films, they will get a notification thanking them for their nominations. Users may also remove nominations if they change their mind.
 
+- It should be noted that this was originally created for a coding challenge, and was not developed for mobile devices. It is ideally presented on screen sizes of a laptop or larger due to the original contraints of the challenge.
+
 # Location of deployed application
 
 The application is deployed via Netlify and be visited here:
