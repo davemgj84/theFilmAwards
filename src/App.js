@@ -1,11 +1,11 @@
 import React from "react";
-import Shoppies from "../src/components/Shoppies";
+import FilmAwards from "../src/components/FilmAwards";
 import ArtDecoFrame from "./components/ArtDecoFrame";
 
 const App = () => {
   return (
     <div className="app">
-      <Shoppies />
+      <FilmAwards />
       <ArtDecoFrame />
     </div>
   );
