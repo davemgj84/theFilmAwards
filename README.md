@@ -38,6 +38,6 @@ I had a ton of fun working on this project! I wanted to utilize my creativity to
 
 # Screenshots
 
-![Search]()
-![Nominate]()
-![Thank you!]()
+![Search](https://github.com/davemgj84/theFilmAwards/blob/master/docs/filmAwards.png?raw=true)
+![Nominate](https://github.com/davemgj84/theFilmAwards/blob/master/docs/nominate.png?raw=true)
+![Thank you!](https://github.com/davemgj84/theFilmAwards/blob/master/docs/banner.png?raw=true)
