@@ -10,7 +10,7 @@ The application is deployed via Netlify and be visited here:
 
 - https://the-film-awards-by-dj.netlify.app/
 
-# Instructions to run assignment locally
+# Instructions to run locally:
 
 Clone this repository. Cd into the project folder, and `run npm install`.
 
